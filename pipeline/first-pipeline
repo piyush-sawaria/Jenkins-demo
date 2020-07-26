@@ -1,0 +1,30 @@
+pipeline {
+  agent any
+
+  environment {
+    FIRSTNAME = 'Piyush'
+    LASTNAME = 'SAWARIA'
+  }
+
+  stages {
+    stage('Build') {
+      steps {
+        sh 'echo Building.. $FIRSTNAME $LASTNAME'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'echo "Testing in multiple steps"'
+        sh '''
+          echo "do additional stuff"
+          ls -lah
+        '''
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploying....'
+      }
+    }
+  }
+}
