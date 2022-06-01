@@ -54,7 +54,7 @@
         <hamcrest.version>2.2</hamcrest.version>
         <concurrency>1</concurrency>
         <java.level>8</java.level>
-        <workflow.version>1.14.2</workflow.version>
+        <workflow.version>2.65</workflow.version>
         <configuration-as-code.version>1.32</configuration-as-code.version>
     </properties>
 
